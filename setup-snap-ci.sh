@@ -1,7 +1,5 @@
 #!/bin/sh
 
-set -eux
-  
 cd /tmp
 sudo yum install -y tar wget
 

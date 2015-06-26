@@ -1,0 +1,15 @@
+language: haskell
+
+install:
+  - curl -o BuildFromSource.hs https://raw.githubusercontent.com/elm-lang/elm-platform/master/installers/BuildFromSource.hs
+  - runhaskell BuildFromSource.hs 0.15
+  - cd Elm-Platform/master
+  - cp ../../* .
+  - cabal sandbox init --sandbox ..
+  - cabal configure
+  - cabal install --only-dependencies
+
+script:
+  - cd Elm-Platform/master
+  - cabal build
+

@@ -5,7 +5,9 @@ machine:
 dependencies:
   override:
     - cabal update
-    - cabal sandbox init
+    - curl -o BuildFromSource.hs https://raw.githubusercontent.com/elm-lang/elm-platform/master/installers/BuildFromSource.hs
+    - runhaskell BuildFromSource.hs 
+    - ./setup-circleci.sh
 
 test:
   override:

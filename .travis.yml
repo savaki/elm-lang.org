@@ -13,3 +13,4 @@ script:
   - cd Elm-Platform/master
   - cabal build
 
+

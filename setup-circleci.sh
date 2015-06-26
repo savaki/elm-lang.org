@@ -5,7 +5,7 @@
 #   https://github.com/elm-lang/elm-lang.org
 #
 
-cd Elm-Platform/master
+cd Elm-Platform/0.15
 cp ../../* .
 cabal sandbox init --sandbox ..
 cabal configure

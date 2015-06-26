@@ -6,7 +6,7 @@ dependencies:
   override:
     - cabal update
     - curl -o BuildFromSource.hs https://raw.githubusercontent.com/elm-lang/elm-platform/master/installers/BuildFromSource.hs
-    - runhaskell BuildFromSource.hs 
+    - runhaskell BuildFromSource.hs 0.15
     - ./setup-circleci.sh
 
 test:

@@ -1,0 +1,9 @@
+machine:
+  ghc:
+    version: 7.8.3
+
+test:
+  override:
+    - echo "no tests to run"
+    - echo "second line from test"
+
